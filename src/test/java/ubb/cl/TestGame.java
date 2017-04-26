@@ -31,5 +31,20 @@ public class TestGame {
 		
 		assertEquals(17,result);
 	}
+	
+	@Test
+	public void roll0And0Return17(){
+		int result;
+		g.roll(3);
+		g.roll(5);
+		g.roll(7);
+		g.roll(2);
+		g.roll(0);
+		g.roll(0);
+		
+		result=g.score();
+		
+		assertEquals(17,result);
+	}
 }
 
