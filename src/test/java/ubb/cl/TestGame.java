@@ -46,5 +46,22 @@ public class TestGame {
 		
 		assertEquals(17,result);
 	}
+	
+	@Test
+	public void spare(){
+		int result;
+		g.roll(3);
+		g.roll(5);
+		g.roll(7);
+		g.roll(2);
+		g.roll(0);
+		g.roll(0);
+		g.roll(5);
+		g.roll(5);
+		
+		result = g.score();
+		
+		assertEquals(27,result);
+	}
 }
 
